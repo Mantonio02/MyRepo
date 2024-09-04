@@ -11,6 +11,12 @@ public class Poll {
 
     }
 
+    public Poll(String question, Instant publishedAt, Instant validUntil) {
+        this.question = question;
+        this.publishedAt = publishedAt;
+        this.validUntil = validUntil;
+    }
+
     public String getQuestion() {
         return question;
     }

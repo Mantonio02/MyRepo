@@ -8,6 +8,11 @@ public class VoteOption {
 
     }
 
+    public VoteOption(String caption, int presentationOrder) {
+        this.caption = caption;
+        this.presentationOrder = presentationOrder;
+    }
+
     public String getCaption() {
         return caption;
     }

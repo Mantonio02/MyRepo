@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5435a189-00b9-4754-8dd1-443b50d8e5db" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyGroup/MyProject/Poll.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyGroup/MyProject/PollManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyGroup/MyProject/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyGroup/MyProject/Vote.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyGroup/MyProject/VoteOption.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/MyGroup/MyProject/MyProjectApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/MyGroup/MyProject/MyProjectApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyGroup/MyProject/MyProjectApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyGroup/MyProject/MyProjectApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyGroup/MyProject/Poll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyGroup/MyProject/Poll.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyGroup/MyProject/PollManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyGroup/MyProject/PollManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyGroup/MyProject/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyGroup/MyProject/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyGroup/MyProject/Vote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyGroup/MyProject/Vote.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyGroup/MyProject/VoteOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyGroup/MyProject/VoteOption.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +60,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Gradle.Build MyRepo.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.MyProjectApplication.executor": "Run",
@@ -114,7 +118,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1725439723401</updated>
-      <workItem from="1725439726139" duration="1532000" />
+      <workItem from="1725439726139" duration="5074000" />
     </task>
     <servers />
   </component>

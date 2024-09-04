@@ -9,6 +9,10 @@ public class PollManager {
 
     }
 
+    public PollManager(HashMap<User, Poll> userPoll) {
+        this.userPoll = userPoll;
+    }
+
     public HashMap<User, Poll> getUserPoll() {
         return userPoll;
     }
