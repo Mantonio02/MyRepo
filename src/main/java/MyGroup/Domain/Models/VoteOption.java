@@ -1,4 +1,4 @@
-package MyGroup.MyProject;
+package MyGroup.Domain.Models;
 
 public class VoteOption {
     private String caption;

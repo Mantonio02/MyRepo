@@ -5,13 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5435a189-00b9-4754-8dd1-443b50d8e5db" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyGroup/Domain/Controllers/PollController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyGroup/Domain/Controllers/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyGroup/Domain/Controllers/VoteController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyGroup/Domain/Controllers/VoteOptionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyGroup/Domain/Managers/DomainManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyGroup/Domain/MyProjectApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyGroup/MyProject/MyProjectApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyGroup/MyProject/MyProjectApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyGroup/MyProject/Poll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyGroup/MyProject/Poll.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyGroup/MyProject/PollManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyGroup/MyProject/PollManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyGroup/MyProject/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyGroup/MyProject/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyGroup/MyProject/Vote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyGroup/MyProject/Vote.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyGroup/MyProject/VoteOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyGroup/MyProject/VoteOption.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/MyGroup/MyProject/MyProjectApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyGroup/MyProject/MyProjectApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyGroup/MyProject/Poll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyGroup/Domain/Models/Poll.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyGroup/MyProject/PollManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyGroup/Domain/Managers/PollManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyGroup/MyProject/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyGroup/Domain/Models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyGroup/MyProject/Vote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyGroup/Domain/Models/Vote.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyGroup/MyProject/VoteOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyGroup/Domain/Models/VoteOption.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MyGroup/MyProject/MyProjectApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MyGroup/Domain/MyProjectApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,35 +66,36 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2lbD8BmIkPvJMCOCVgYKpihv5Qk" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Build MyRepo.executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.MyProjectApplication.executor": "Run",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build MyRepo.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.MyProjectApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="MyRepo" />
@@ -95,7 +114,7 @@
     </configuration>
     <configuration name="MyProjectApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="MyProject.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="MyGroup.MyProject.MyProjectApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="MyGroup.Domain.MyProjectApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="com.soywiz.korge.intellij.UpdateResourceBeforeRunTask" enabled="false" />
@@ -119,6 +138,9 @@
       <option name="presentableId" value="Default" />
       <updated>1725439723401</updated>
       <workItem from="1725439726139" duration="5074000" />
+      <workItem from="1725532311403" duration="5365000" />
+      <workItem from="1725609551797" duration="10908000" />
+      <workItem from="1725702520434" duration="5161000" />
     </task>
     <servers />
   </component>

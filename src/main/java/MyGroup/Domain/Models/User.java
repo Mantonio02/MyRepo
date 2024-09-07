@@ -1,17 +1,13 @@
-package MyGroup.MyProject;
+package MyGroup.Domain.Models;
+
+import java.util.ArrayList;
+import java.util.Random;
 
 public class User {
     private String username;
     private String email;
 
-    public User() {
-
-    }
-
-    public User(String username, String email) {
-        this.username = username;
-        this.email = email;
-    }
+    public User() {}
 
     public String getUsername() {
         return username;
@@ -28,4 +24,5 @@ public class User {
     public void setEmail(String email) {
         this.email = email;
     }
+
 }
