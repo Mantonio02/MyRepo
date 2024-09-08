@@ -85,21 +85,26 @@ Experiment results:
 
 - Create Another User, POST http://localhost:8080/users/ ->
   Body:
+    ```json
     {
       "username": "UserB",
       "email": "def@email.com"
     }
+    ```
 
   Response: 201 Created
+    ```json
     {
       "username": "UserA",
       "email": "abc@email.com"
     }
+    ```
 
   Associated code: See Create New User.
 
 - List Users, GET http://localhost:8080/users/ ->
   Response: 200 OK
+    ```json
     {
       {
         "username": "UserB",
@@ -110,6 +115,7 @@ Experiment results:
         "email": "abc@email.com"
       }
     }
+    ```
 
   Associated code: See List User.
   
