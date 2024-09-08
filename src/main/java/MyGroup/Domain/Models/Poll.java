@@ -7,15 +7,7 @@ public class Poll {
     private Instant publishedAt;
     private Instant validUntil;
 
-    public Poll() {
-
-    }
-
-    public Poll(String question, Instant publishedAt, Instant validUntil) {
-        this.question = question;
-        this.publishedAt = publishedAt;
-        this.validUntil = validUntil;
-    }
+    public Poll() {}
 
     public String getQuestion() {
         return question;
@@ -39,5 +31,10 @@ public class Poll {
 
     public void setValidUntil(Instant validUntil) {
         this.validUntil = validUntil;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
     }
 }

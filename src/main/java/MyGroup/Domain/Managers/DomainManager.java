@@ -1,22 +1,21 @@
 package MyGroup.Domain.Managers;
 
-import MyGroup.Domain.Models.Poll;
 import MyGroup.Domain.Models.User;
-import MyGroup.Domain.Models.Vote;
-import MyGroup.Domain.Models.VoteOption;
 import org.springframework.stereotype.Component;
 
 import java.util.Collection;
 import java.util.HashMap;
-import java.util.Map;
-import java.util.Optional;
 
 @Component
 public class DomainManager {
     private HashMap<String, User> userList = new HashMap<>();
-    private HashMap<User, Vote> userVotes;
+    private PollManager pollManager;
 
     public DomainManager() {
+    }
+
+    public PollManager getPollManager() {
+        return pollManager;
     }
 
     public void addUser(User user) {

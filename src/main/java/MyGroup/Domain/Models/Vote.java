@@ -5,9 +5,7 @@ import java.time.Instant;
 public class Vote {
     private Instant publishedAt;
 
-    public Vote() {
-
-    }
+    public Vote() {}
 
     public Vote(Instant publishedAt) {
         this.publishedAt = publishedAt;

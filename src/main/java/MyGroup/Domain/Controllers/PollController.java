@@ -10,9 +10,10 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.net.URI;
+import java.util.Collection;
 
 @RestController
-@RequestMapping("/polls")
+@RequestMapping("/users/polls")
 public class PollController {
     private final DomainManager domainManager;
 
@@ -20,34 +21,48 @@ public class PollController {
         this.domainManager = domainManager;
     }
 
-//    @GetMapping("/{user}")
-//    public ResponseEntity<Poll> getPoll(@PathVariable User user) {
-//        if (pollManager.getUserPoll().containsKey(user)) {
-//            return ResponseEntity.ok(pollManager.getUserPoll().get(user));
-//        }
-//
-//        return ResponseEntity.notFound().build();
-//    }
-//
-//    @PostMapping("/{user}")
-//    public ResponseEntity<Poll> createPoll(@PathVariable User user, @RequestBody Poll poll) {
-//        pollManager.getUserPoll().put(user, poll);
-//        return ResponseEntity.created(URI.create("/" + user)).body(poll);
-//    }
-//
-//    @PutMapping("/{user}")
-//    public ResponseEntity<Poll> changePoll(@PathVariable User user, @RequestBody Poll poll) {
-//        if (pollManager.getUserPoll().containsKey(user)) {
-//            pollManager.getUserPoll().replace(user, poll);
-//            return ResponseEntity.created(URI.create("/" + user)).body(poll);
-//        }
-//
-//        return ResponseEntity.notFound().build();
-//    }
-//
-//    @DeleteMapping("/{user}")
-//    public ResponseEntity<Poll> deletePoll(@PathVariable User user, @RequestBody Poll poll) {
-//        pollManager.getUserPoll().remove(user, poll);
-//        return ResponseEntity.notFound().build();
-//    }
+    @GetMapping("/")
+    public Collection<Poll> getAllPollsHandler() {
+        return domainManager.getPollManager().getAllPolls();
+    }
+
+
+    @GetMapping("/{username}/{question}")
+    public ResponseEntity<Poll> getPollHandler(@PathVariable String username, @PathVariable String question) {
+        User user = domainManager.getUser(username);
+        if (domainManager.getPollManager().getUserPoll().get(user).getQuestion() != null) {
+            return ResponseEntity.ok(domainManager.getPollManager().getPoll(question));
+        }
+
+        return ResponseEntity.notFound().build();
+    }
+
+    @PostMapping(value = "/{username}")
+    public ResponseEntity<Poll> createPollHandler(@PathVariable String username, @RequestBody Poll poll) {
+        User user = domainManager.getUser(username);
+        domainManager.getPollManager().addPoll(user, poll);
+        return ResponseEntity.created(URI.create("/" + poll.getQuestion())).body(poll);
+    }
+
+    @PutMapping("/{username}")
+    public ResponseEntity<Poll> changePollHandler(@PathVariable String username, @RequestBody Poll poll) {
+        User user = domainManager.getUser(username);
+        if (domainManager.getPollManager().getUserPoll().containsKey(user)) {
+            domainManager.getPollManager().getUserPoll().replace(user, poll);
+            return ResponseEntity.created(URI.create("/" + user.getUsername())).body(poll);
+        }
+
+        return ResponseEntity.notFound().build();
+    }
+
+    @DeleteMapping("/{username}")
+    public ResponseEntity<Poll> deletePollHandler(@PathVariable String username) {
+        User user = domainManager.getUser(username);
+        boolean wasPresent = this.domainManager.getPollManager().deletePoll(user);
+        if (wasPresent) {
+            return ResponseEntity.noContent().build();
+        }
+
+        return ResponseEntity.notFound().build();
+    }
 }
