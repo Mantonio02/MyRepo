@@ -109,7 +109,7 @@ Experiment results:
       {
         "username": "UserB",
         "email": "def@email.com"
-      }
+      },
       {
         "username": "UserA",
         "email": "abc@email.com"
