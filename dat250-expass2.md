@@ -16,3 +16,92 @@ From what I can gather from expass 1, I followed the suggested tutorials that we
 
 Pending Issues:
 - I did not manage to complete step 4 and beyond, a lot of time went into trying to understand the concepts of this assignment whenever things went wrong.
+
+Experiment results:
+- I managed to make some of the test scenarios work. Those are creating a new user, list it, create another and list them. At the part of making polls, votes and voting options I did not finish coding them for testing.
+- Create New User, POST http://localhost:8080/users/ ->
+  Body:
+    {
+      "username": "UserA",
+      "email": "abc@email.com"
+    }
+
+  Response: 201 Created
+    {
+      "username": "UserA",
+      "email": "abc@email.com"
+    }
+
+  Associated code:
+    // UserController.java
+    @PostMapping(value = "/")
+    public ResponseEntity<User> createUserHandler(@RequestBody User user) {
+        this.domainManager.addUser(user);
+        return ResponseEntity.created(URI.create("/" + user.getUsername())).body(user);
+    }
+
+    // DomainManager.java
+    public void addUser(User user) {
+        if (!userList.containsValue(user.getUsername())) {
+            userList.put(user.getUsername(), user);
+        }
+    }
+
+    // User.java
+    public getUsername() {
+        return username;
+    }
+
+- List User, GET http://localhost:8080/users/ ->
+  Response: 200 OK
+    {
+      {
+        "username": "UserA",
+        "email": "abc@email.com"
+      }
+    }
+
+  Associated code:
+    // UserController.java
+    @GetMapping("/")
+    public Collection<User> getAllUsersHandler() {
+        return domainManager.getAllUsers();
+    }
+
+    // DomainManager.java
+    public Collection<User> getAllUsers() {
+        return userList.values();
+    }
+
+- Create Another User, POST http://localhost:8080/users/ ->
+  Body:
+    {
+      "username": "UserB",
+      "email": "def@email.com"
+    }
+
+  Response: 201 Created
+    {
+      "username": "UserA",
+      "email": "abc@email.com"
+    }
+
+  Associated code: See Create New User.
+
+- List Users, GET http://localhost:8080/users/ ->
+  Response: 200 OK
+    {
+      {
+        "username": "UserB",
+        "email": "abc@email.com"
+      }
+      {
+        "username": "UserA",
+        "email": "abc@email.com"
+      }
+    }
+
+  Associated code: See List User.
+  
+    
+  
