@@ -33,7 +33,7 @@ Experiment results:
     }
 
   Associated code:
-    ´´´
+    ```java
     // UserController.java
     @PostMapping(value = "/")
     public ResponseEntity<User> createUserHandler(@RequestBody User user) {
@@ -52,7 +52,7 @@ Experiment results:
     public getUsername() {
         return username;
     }
-    ´´´
+    ```
 
 - List User, GET http://localhost:8080/users/ ->
   Response: 200 OK
@@ -64,7 +64,7 @@ Experiment results:
     }
 
   Associated code:
-    ´´´
+    ```java
     // UserController.java
     @GetMapping("/")
     public Collection<User> getAllUsersHandler() {
@@ -75,7 +75,7 @@ Experiment results:
     public Collection<User> getAllUsers() {
         return userList.values();
     }
-    ´´´
+    ```
 
 - Create Another User, POST http://localhost:8080/users/ ->
   Body:
