@@ -21,16 +21,20 @@ Experiment results:
 - I managed to make some of the test scenarios work. Those are creating a new user, list it, create another and list them. At the part of making polls, votes and voting options I did not finish coding them for testing.
 - Create New User, POST http://localhost:8080/users/ ->
   Body:
+    ```json
     {
       "username": "UserA",
       "email": "abc@email.com"
     }
+    ```
 
   Response: 201 Created
+    ```json
     {
       "username": "UserA",
       "email": "abc@email.com"
     }
+    ```
 
   Associated code:
     ```java
@@ -56,12 +60,14 @@ Experiment results:
 
 - List User, GET http://localhost:8080/users/ ->
   Response: 200 OK
+    ```json
     {
       {
         "username": "UserA",
         "email": "abc@email.com"
       }
     }
+    ```
 
   Associated code:
     ```java
