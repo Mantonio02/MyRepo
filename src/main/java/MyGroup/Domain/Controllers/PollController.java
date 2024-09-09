@@ -1,10 +1,8 @@
 package MyGroup.Domain.Controllers;
 
 import MyGroup.Domain.Managers.DomainManager;
-import MyGroup.Domain.Managers.PollManager;
 import MyGroup.Domain.Models.Poll;
 import MyGroup.Domain.Models.User;
-import org.apache.coyote.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -15,6 +13,13 @@ import java.util.Collection;
 @RestController
 @RequestMapping("/users/polls")
 public class PollController {
+    /**
+     * Note: PollController builds upon UserController, which in turn builds upon
+     * Lecture 07's LocationController. This class' code is unfinished.
+     *
+     * <a href="https://github.com/selabhvl/dat250public/blob/master/lectureexamples/l06_SPAs/backend/src/main/java/no/hvl/dat250/l06/LocationController.java">LocationController</a>
+     * */
+
     private final DomainManager domainManager;
 
     public PollController(@Autowired DomainManager domainManager) {
@@ -25,7 +30,6 @@ public class PollController {
     public Collection<Poll> getAllPollsHandler() {
         return domainManager.getPollManager().getAllPolls();
     }
-
 
     @GetMapping("/{username}/{question}")
     public ResponseEntity<Poll> getPollHandler(@PathVariable String username, @PathVariable String question) {

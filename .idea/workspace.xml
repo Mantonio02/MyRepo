@@ -5,16 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5435a189-00b9-4754-8dd1-443b50d8e5db" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MyGroup/Domain/Controllers/PollController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyGroup/Domain/Controllers/PollController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyGroup/Domain/Controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyGroup/Domain/Controllers/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MyGroup/Domain/Controllers/VoteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyGroup/Domain/Controllers/VoteController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MyGroup/Domain/Controllers/VoteOptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyGroup/Domain/Controllers/VoteOptionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyGroup/Domain/Managers/DomainManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyGroup/Domain/Managers/DomainManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MyGroup/Domain/Managers/PollManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyGroup/Domain/Managers/PollManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyGroup/Domain/Models/Poll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyGroup/Domain/Models/Poll.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyGroup/Domain/Models/Vote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyGroup/Domain/Models/Vote.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyGroup/Domain/Models/VoteOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyGroup/Domain/Models/VoteOption.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyGroup/Domain/Models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyGroup/Domain/Models/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +123,8 @@
       <workItem from="1725532311403" duration="5365000" />
       <workItem from="1725609551797" duration="10908000" />
       <workItem from="1725702520434" duration="10076000" />
-      <workItem from="1725796089771" duration="12387000" />
+      <workItem from="1725796089771" duration="15636000" />
+      <workItem from="1725863794748" duration="5032000" />
     </task>
     <servers />
   </component>

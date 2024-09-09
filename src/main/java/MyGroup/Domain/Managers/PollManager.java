@@ -5,7 +5,6 @@ import MyGroup.Domain.Models.User;
 import MyGroup.Domain.Models.Vote;
 import MyGroup.Domain.Models.VoteOption;
 
-import java.lang.reflect.Array;
 import java.util.*;
 
 public class PollManager {
@@ -14,7 +13,7 @@ public class PollManager {
 
     public PollManager() {
         this.userPoll = new HashMap<User, Poll>();
-        this.optionsPoll = new HashSet<VoteOption>(2);
+        this.optionsPoll = new HashSet<VoteOption>();
     }
 
     public void addPoll(User user, Poll poll) {

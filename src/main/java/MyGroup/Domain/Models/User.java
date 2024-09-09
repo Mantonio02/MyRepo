@@ -1,8 +1,5 @@
 package MyGroup.Domain.Models;
 
-import java.util.ArrayList;
-import java.util.Random;
-
 public class User {
     private String username;
     private String email;
