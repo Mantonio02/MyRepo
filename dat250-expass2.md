@@ -80,7 +80,7 @@ Experiment Results:
     // DomainManager.java
     private HashMap<String, User> userList = new HashMap<>();
 
-    / Some code ... /
+    // Some code ... //
     
     public Collection<User> getAllUsers() {
         return userList.values();
