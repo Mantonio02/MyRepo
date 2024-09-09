@@ -17,7 +17,7 @@ From what I can gather from expass 1, I followed the suggested tutorials that we
 Pending Issues:
 - I did not manage to complete step 4 and beyond, a lot of time went into trying to understand the concepts of this assignment whenever things went wrong.
 
-Experiment results:
+Experiment Results:
 - I managed to make some of the test scenarios work. Those are creating a new user, list it, create another and list them. At the part of making polls, votes and voting options I did not finish coding them for testing.
 - Create New User, POST http://localhost:8080/users/ ->
   Body:
@@ -36,7 +36,7 @@ Experiment results:
     }
     ```
 
-  Associated code:
+  Associated Code:
     ```java
     // UserController.java
     @PostMapping(value = "/")
@@ -69,7 +69,7 @@ Experiment results:
     }
     ```
 
-  Associated code:
+  Associated Code:
     ```java
     // UserController.java
     @GetMapping("/")
@@ -100,7 +100,7 @@ Experiment results:
     }
     ```
 
-  Associated code: See Create New User.
+  Associated Code: See Create New User.
 
 - List Users, GET http://localhost:8080/users/ ->
   Response: 200 OK
@@ -117,7 +117,4 @@ Experiment results:
     }
     ```
 
-  Associated code: See List User.
-  
-    
-  
+  Associated Code: See List User.
