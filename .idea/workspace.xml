@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5435a189-00b9-4754-8dd1-443b50d8e5db" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/vite-project/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/vite-project/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/vite-project/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/vite-project/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +63,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.MyProjectApplication.executor": "Run",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "Frontend",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/mathi/OneDrive/Documents/UiB/Master/H24/DAT250/Lab/MyRepo",
     "node.js.detected.package.eslint": "true",
@@ -105,7 +106,7 @@
       <workItem from="1725702520434" duration="10076000" />
       <workItem from="1725796089771" duration="15636000" />
       <workItem from="1725863794748" duration="5032000" />
-      <workItem from="1726237222657" duration="548000" />
+      <workItem from="1726237222657" duration="908000" />
     </task>
     <servers />
   </component>
