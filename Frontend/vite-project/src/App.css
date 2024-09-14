@@ -1,10 +1,29 @@
+body {
+    background-color: aqua;
+}
+
 .creator {
     display: grid;
-    background-color: aqua;
     padding: 4px;
     margin-right: 75%;
 }
 
 .textbox {
     margin-bottom: 2px;
+}
+
+h1, h2, p {
+    color: white;
+}
+
+.poll {
+    display: grid;
+    background-color: cadetblue;
+    padding: 8px;
+    margin-top: 1%;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-style: dotted;
+    border-color: azure;
+    text-align: center;
 }

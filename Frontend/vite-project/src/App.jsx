@@ -1,10 +1,16 @@
 import './App.css'
 
+const user = {
+    username: "JohnDoe",
+    email: "johndoe@email.com",
+    password: "ASimplePWDForTestingPurposes"
+}
+
 function CreateUserComponent() {
     return (
         <>
-            <h1>Create User</h1>
             <form className={"creator"}>
+                <h1>Create User</h1>
                 <input className={"textbox"} placeholder={"Username"} required/>
                 <input className={"textbox"} placeholder={"Email"} required/>
                 <input className={"textbox"} placeholder={"Password"} required/>
@@ -17,8 +23,8 @@ function CreateUserComponent() {
 function CreatePollComponent() {
     return (
         <>
-            <h1>Create Poll</h1>
             <form className={"creator"}>
+                <h1>Create Poll</h1>
                 <input className={"textbox"} placeholder={"Question"} required/>
                 <input placeholder={"Option 1"} required/>
                 <input placeholder={"Option 2"} required/>
@@ -35,9 +41,17 @@ function CreatePollComponent() {
     );
 }
 
+
 function VoteComponent() {
    return (
-       <h1>Vote</h1>
+       <>
+           <div className={"poll"}>
+               <h2>Poll made by {user.username}</h2>
+               <p>What quote do you think is most iconic?</p>
+               <button>I Like Turtles</button>
+               <button>Here Comes Johnny!</button>
+           </div>
+       </>
        // TODO: Implement buttons for VoteOptions.
        //  Current plan is to iterate through a list of
        //  them to create a button for each VoteOption (element).
