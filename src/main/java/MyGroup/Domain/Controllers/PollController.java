@@ -11,6 +11,7 @@ import java.net.URI;
 import java.util.Collection;
 
 @RestController
+@CrossOrigin
 @RequestMapping("/users/polls")
 public class PollController {
     /**
