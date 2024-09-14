@@ -1,6 +1,8 @@
 import './App.css'
 import { useState } from 'react'
 
+const domainUrl = "http://localhost:5173"
+
 const user = {
     username: "JohnDoe",
     email: "johndoe@email.com",
@@ -23,6 +25,8 @@ function CreateUserComponent() {
         alert("User registered!")
     }
 
+    fetch(domainUrl + /users/);
+
     return (
         <>
             <form className={"creator"}>
@@ -40,6 +44,8 @@ function CreatePollComponent() {
     function handleSubmit() {
         alert("Poll registered!")
     }
+
+    //fetch(domainUrl + /users/polls/{username});
 
     return (
         <>
@@ -70,6 +76,8 @@ function VoteComponent() {
             </button>
         </>
     );
+
+    //fetch(domainUrl + /users/votes/);
 
     return (
         <>
