@@ -4,7 +4,7 @@ function CreateUserComponent() {
     return (
         <>
             <h1>Create User</h1>
-            <form className={"userReg"}>
+            <form className={"creator"}>
                 <input className={"textbox"} placeholder={"Username"} required/>
                 <input className={"textbox"} placeholder={"Email"} required/>
                 <input className={"textbox"} placeholder={"Password"} required/>
@@ -16,10 +16,22 @@ function CreateUserComponent() {
 
 function CreatePollComponent() {
     return (
-        <h1>Create Poll</h1>
+        <>
+            <h1>Create Poll</h1>
+            <form className={"creator"}>
+                <input className={"textbox"} placeholder={"Question"} required/>
+                <input placeholder={"Option 1"} required/>
+                <input placeholder={"Option 2"} required/>
+                <button>Submit</button>
+            </form>
+        </>
         // TODO: Implement a form that requires a question and VoteOptions.
         //  The poll should be registered as released at exact time and date
         //  as it was published, and the expiration date is up for choice.
+        //  Note that each registered poll should have its own unique id.
+
+        // TODO: Implement some sort of way to create N VoteOptions,
+        //  with N being the creator's demand of amount.
     );
 }
 

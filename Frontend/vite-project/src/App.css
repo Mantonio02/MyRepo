@@ -1,8 +1,8 @@
-.userReg {
+.creator {
     display: grid;
     background-color: aqua;
     padding: 4px;
-    margin-right: 70%;
+    margin-right: 75%;
 }
 
 .textbox {
