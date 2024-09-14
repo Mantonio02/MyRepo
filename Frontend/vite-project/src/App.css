@@ -1,0 +1,10 @@
+.userReg {
+    display: grid;
+    background-color: aqua;
+    padding: 4px;
+    margin-right: 70%;
+}
+
+.textbox {
+    margin-bottom: 2px;
+}

@@ -2,9 +2,15 @@ import './App.css'
 
 function CreateUserComponent() {
     return (
-        <h1>Create User</h1>
-        // TODO: Implement a form that requires
-        //  username, email and password to be registered.
+        <>
+            <h1>Create User</h1>
+            <form className={"userReg"}>
+                <input className={"textbox"} placeholder={"Username"} required/>
+                <input className={"textbox"} placeholder={"Email"} required/>
+                <input className={"textbox"} placeholder={"Password"} required/>
+                <button>Submit</button>
+            </form>
+        </>
     );
 }
 
