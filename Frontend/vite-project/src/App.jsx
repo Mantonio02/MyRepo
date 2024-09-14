@@ -6,6 +6,16 @@ const user = {
     password: "ASimplePWDForTestingPurposes"
 }
 
+const poll = {
+    question: "What quote do you think is most iconic?",
+    publishedAt: "2024-09-14T21:47:49.12Z",
+    validUntil: "2025-09-14T21:47:49.12Z",
+    options: [
+        {caption: "I Like Turtles", presentationOrder: 1},
+        {caption: "Here Comes Johnny!", presentationOrder: 2}
+    ]
+}
+
 function CreateUserComponent() {
     return (
         <>
@@ -43,18 +53,20 @@ function CreatePollComponent() {
 
 
 function VoteComponent() {
-   return (
-       <>
-           <div className={"poll"}>
-               <h2>Poll made by {user.username}</h2>
-               <p>What quote do you think is most iconic?</p>
-               <button>I Like Turtles</button>
-               <button>Here Comes Johnny!</button>
-           </div>
-       </>
-       // TODO: Implement buttons for VoteOptions.
-       //  Current plan is to iterate through a list of
-       //  them to create a button for each VoteOption (element).
+    const voteOptions = poll.options.map(option =>
+        <button key={option.presentationOrder}>
+            {option.caption}
+        </button>
+    );
+
+    return (
+        <>
+            <div className={"poll"}>
+                <h2>Poll made by {user.username}</h2>
+                <p>{poll.question}</p>
+                {voteOptions}
+            </div>
+        </>
    );
 }
 
