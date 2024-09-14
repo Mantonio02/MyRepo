@@ -4,8 +4,12 @@ body {
 
 .creator {
     display: grid;
+    background-color: cornflowerblue;
     padding: 4px;
-    margin-right: 75%;
+    margin-right: 70%;
+    margin-bottom: 1%;
+    border-style: dashed;
+    border-color: azure;
 }
 
 .textbox {

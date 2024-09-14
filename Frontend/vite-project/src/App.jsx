@@ -1,4 +1,5 @@
 import './App.css'
+import { useState } from 'react'
 
 const user = {
     username: "JohnDoe",
@@ -12,11 +13,16 @@ const poll = {
     validUntil: "2025-09-14T21:47:49.12Z",
     options: [
         {caption: "I Like Turtles", presentationOrder: 1},
-        {caption: "Here Comes Johnny!", presentationOrder: 2}
+        {caption: "Here Comes Johnny!", presentationOrder: 2},
+        {caption: "I Am Your Father", presentationOrder: 3}
     ]
 }
 
 function CreateUserComponent() {
+    function handleSubmit() {
+        alert("User registered!")
+    }
+
     return (
         <>
             <form className={"creator"}>
@@ -24,13 +30,17 @@ function CreateUserComponent() {
                 <input className={"textbox"} placeholder={"Username"} required/>
                 <input className={"textbox"} placeholder={"Email"} required/>
                 <input className={"textbox"} placeholder={"Password"} required/>
-                <button>Submit</button>
+                <button onClick={handleSubmit} disabled>Submit</button>
             </form>
         </>
     );
 }
 
 function CreatePollComponent() {
+    function handleSubmit() {
+        alert("Poll registered!")
+    }
+
     return (
         <>
             <form className={"creator"}>
@@ -38,7 +48,7 @@ function CreatePollComponent() {
                 <input className={"textbox"} placeholder={"Question"} required/>
                 <input placeholder={"Option 1"} required/>
                 <input placeholder={"Option 2"} required/>
-                <button>Submit</button>
+                <button onClick={handleSubmit} disabled>Submit</button>
             </form>
         </>
         // TODO: Implement a form that requires a question and VoteOptions.
@@ -51,12 +61,27 @@ function CreatePollComponent() {
     );
 }
 
+function ShowVotesComponent() {
+    const [votes, setVotes] = useState(0);
+    function handleClick() {
+        setVotes(votes + 1);
+    }
+
+    return (
+      <button onClick={handleClick}>
+          {votes} votes
+      </button>
+    );
+
+}
 
 function VoteComponent() {
     const voteOptions = poll.options.map(option =>
-        <button key={option.presentationOrder}>
-            {option.caption}
-        </button>
+        <>
+            <button key={option.presentationOrder}>
+                {option.caption}
+            </button>
+        </>
     );
 
     return (
