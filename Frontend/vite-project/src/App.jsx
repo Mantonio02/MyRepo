@@ -46,8 +46,9 @@ function CreatePollComponent() {
             <form className={"creator"}>
                 <h1>Create Poll</h1>
                 <input className={"textbox"} placeholder={"Question"} required/>
-                <input placeholder={"Option 1"} required/>
-                <input placeholder={"Option 2"} required/>
+                <input className={"textbox"} placeholder={"Additional options"} id={"extra"}/>
+                <input className={"textbox"} placeholder={"Option 1"} required/>
+                <input className={"textbox"} placeholder={"Option 2"} required/>
                 <button onClick={handleSubmit} disabled>Submit</button>
             </form>
         </>
@@ -61,25 +62,11 @@ function CreatePollComponent() {
     );
 }
 
-function ShowVotesComponent() {
-    const [votes, setVotes] = useState(0);
-    function handleClick() {
-        setVotes(votes + 1);
-    }
-
-    return (
-      <button onClick={handleClick}>
-          {votes} votes
-      </button>
-    );
-
-}
-
 function VoteComponent() {
     const voteOptions = poll.options.map(option =>
         <>
             <button key={option.presentationOrder}>
-                {option.caption}
+                {option.caption} | 0 votes
             </button>
         </>
     );
