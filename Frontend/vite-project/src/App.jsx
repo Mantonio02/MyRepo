@@ -7,6 +7,8 @@ let newOption2;
 let publishedAt;
 let validUntil;
 
+// polls, option and votes based off let result from App.svelte in Lecture 06 SPAs:
+// https://github.com/selabhvl/dat250public/blob/master/lectureexamples/l06_SPAs/frontend/src/App.svelte.
 //const polls = () =>  {
 //  return fetch('/polls')
 //        .then((response) => {
@@ -90,6 +92,7 @@ function CreateUserComponent() {
 }
 
 function CreatePollComponent() {
+    // Setup for "controlled" input based off an example from https://react.dev/reference/react-dom/components/input#controlling-an-input-with-a-state-variable.
     const [question, setQuestion] = useState('');
     const [option1, setOption1] = useState('');
     const [option2, setOption2] = useState('');
@@ -126,6 +129,7 @@ function CreatePollComponent() {
 }
 
 function VoteComponent() {
+    // Based off example of rendering lists from https://react.dev/learn.
     const polls = poll.options.map(option =>
         <button key={option.presentationOrder}>
             {option.caption}
