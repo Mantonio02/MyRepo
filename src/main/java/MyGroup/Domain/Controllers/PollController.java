@@ -11,7 +11,8 @@ import java.net.URI;
 import java.util.Collection;
 
 @RestController
-@RequestMapping("/users/polls")
+@CrossOrigin
+@RequestMapping("/polls")
 public class PollController {
     /**
      * Note: PollController builds upon UserController, which in turn builds upon

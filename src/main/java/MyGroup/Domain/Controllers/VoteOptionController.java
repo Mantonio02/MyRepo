@@ -11,7 +11,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Collection;
 
 @RestController
-@RequestMapping("/users/polls/options")
+@CrossOrigin
+@RequestMapping("/voteOptions")
 public class VoteOptionController {
     private final DomainManager domainManager;
 
