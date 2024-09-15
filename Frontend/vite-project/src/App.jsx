@@ -1,38 +1,27 @@
 import './App.css'
 import { useState } from 'react'
 
-const domainUrl = "http://localhost:5173"
+let newUsername;
+let newEmail;
+let newPwd;
+let newVote;
 
-const polls = () => {
-    return fetch(domainUrl + '/polls/')
-        .then(response => response.json())
-        .then(json => {
-            return json;
+const polls = fetch('/polls')
+        .then((response) => {
+            return response.json();
         })
-        .catch(error => {
-            console.error(error);
-        })
-}
 
-const voteOptions = () => {
-    return fetch(domainUrl + '/voteOptions/')
-        .then(response => response.json())
-        .then(json => {
-            return json;
-        })
-        .catch(error => {
-            console.error(error);
+const options = () => {
+    return fetch('/voteOptions')
+        .then((response) => {
+            return response.json();
         })
 }
 
 const votes = () => {
-    return fetch(domainUrl + '/votes/')
-        .then(response => response.json())
-        .then(json => {
-            return json;
-        })
-        .catch(error => {
-            console.error(error);
+    return fetch('/votes')
+        .then((response) => {
+            return response.json();
         })
 }
 
@@ -58,8 +47,6 @@ function CreateUserComponent() {
         alert("User registered!")
     }
 
-    fetch(domainUrl + /users/);
-
     return (
         <>
             <form className={"creator"}>
@@ -74,21 +61,58 @@ function CreateUserComponent() {
 }
 
 function CreatePollComponent() {
-    function handleSubmit() {
-        alert("Poll registered!")
-    }
+    const [question, setQuestion] = useState('');
+    const [option1, setOption1] = useState('');
+    const [option2, setOption2] = useState('');
 
-    //fetch(domainUrl + /users/polls/{username});
+    function createPoll() {
+        fetch('/polls/', {
+            method: 'POST',
+            body: JSON.stringify({
+                username: newUsername,
+                email: newEmail,
+                password: newPwd
+            }),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }).then((response) => {
+            if (response.status === 201) {
+                newUsername = "";
+                newEmail = "";
+                newPwd = "";
+            }
+        }).catch((error) => {
+            alert(error.message);
+        })
+    }
 
     return (
         <>
             <form className={"creator"}>
                 <h1>Create Poll</h1>
-                <input className={"textbox"} placeholder={"Question"} required/>
-                <input className={"textbox"} placeholder={"Additional options"} id={"extra"}/>
-                <input className={"textbox"} placeholder={"Option 1"} required/>
-                <input className={"textbox"} placeholder={"Option 2"} required/>
-                <button onClick={handleSubmit} disabled>Submit</button>
+                <input
+                    value={question}
+                    onChange={e => setQuestion(e.target.value)}
+                    className={"textbox"}
+                    placeholder={"Question"}
+                    required
+                />
+                <input
+                    value={option1}
+                    onChange={e => setOption1(e.target.value)}
+                    className={"textbox"}
+                    placeholder={"Option 1"}
+                    required
+                />
+                <input
+                    value={option2}
+                    onChange={e => setOption2(e.target.value)}
+                    className={"textbox"}
+                    placeholder={"Option 2"}
+                    required
+                />
+                <button onClick={createPoll}>Submit</button>
             </form>
         </>
         // TODO: Implement a form that requires a question and VoteOptions.
@@ -109,8 +133,6 @@ function VoteComponent() {
             </button>
         </>
     );
-
-    fetch(domainUrl + /votes/);
 
     return (
         <>
