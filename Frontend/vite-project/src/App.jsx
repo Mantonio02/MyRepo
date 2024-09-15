@@ -1,10 +1,11 @@
 import './App.css'
 import { useState } from 'react'
 
-let newUsername;
-let newEmail;
-let newPwd;
-let newVote;
+let newQuestion;
+let newOption1;
+let newOption2;
+let publishedAt;
+let validUntil;
 
 const polls = fetch('/polls')
         .then((response) => {
@@ -69,18 +70,18 @@ function CreatePollComponent() {
         fetch('/polls/', {
             method: 'POST',
             body: JSON.stringify({
-                username: newUsername,
-                email: newEmail,
-                password: newPwd
+                question: newQuestion,
+                option1: newOption1,
+                option2: newOption2
             }),
             headers: {
                 'Content-Type': 'application/json'
             }
         }).then((response) => {
             if (response.status === 201) {
-                newUsername = "";
-                newEmail = "";
-                newPwd = "";
+                newQuestion = "";
+                newOption1 = "";
+                newOption2 = "";
             }
         }).catch((error) => {
             alert(error.message);
@@ -138,7 +139,6 @@ function VoteComponent() {
         <>
             <div className={"poll"}>
                 <h2>Poll made by {user.username}</h2>
-                <p>{poll.question}</p>
                 {voteOptions}
             </div>
         </>

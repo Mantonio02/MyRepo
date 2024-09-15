@@ -108,7 +108,7 @@
       <workItem from="1725863794748" duration="5032000" />
       <workItem from="1726237222657" duration="2948000" />
       <workItem from="1726304815016" duration="14387000" />
-      <workItem from="1726402479102" duration="7017000" />
+      <workItem from="1726402479102" duration="7714000" />
     </task>
     <servers />
   </component>
@@ -131,7 +131,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/Frontend/vite-project/src/App.jsx</url>
-          <line>38</line>
+          <line>39</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
