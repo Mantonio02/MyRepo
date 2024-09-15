@@ -1,6 +1,7 @@
 package MyGroup.Domain.Managers;
 
 import MyGroup.Domain.Models.User;
+import MyGroup.Domain.Models.Vote;
 import org.springframework.stereotype.Component;
 
 import java.util.Collection;

@@ -7,6 +7,8 @@
     <list default="true" id="5435a189-00b9-4754-8dd1-443b50d8e5db" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/vite-project/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/vite-project/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyGroup/Domain/Controllers/PollController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyGroup/Domain/Controllers/PollController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyGroup/Domain/Managers/DomainManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyGroup/Domain/Managers/DomainManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +110,7 @@
       <workItem from="1725863794748" duration="5032000" />
       <workItem from="1726237222657" duration="2948000" />
       <workItem from="1726304815016" duration="14387000" />
-      <workItem from="1726402479102" duration="7714000" />
+      <workItem from="1726402479102" duration="16680000" />
     </task>
     <servers />
   </component>
@@ -131,7 +133,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/Frontend/vite-project/src/App.jsx</url>
-          <line>39</line>
+          <line>41</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>

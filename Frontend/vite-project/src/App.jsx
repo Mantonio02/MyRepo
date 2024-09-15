@@ -7,10 +7,12 @@ let newOption2;
 let publishedAt;
 let validUntil;
 
-const polls = fetch('/polls')
-        .then((response) => {
-            return response.json();
-        })
+//const polls = () =>  {
+//  return fetch('/polls')
+//        .then((response) => {
+//            return response.json();
+//        })
+//}
 
 const options = () => {
     return fetch('/voteOptions')
@@ -43,6 +45,32 @@ const poll = {
     ]
 }
 
+// Based off function createNewLocation from App.svelte in Lecture 06 SPAs:
+// https://github.com/selabhvl/dat250public/blob/master/lectureexamples/l06_SPAs/frontend/src/App.svelte.
+function createPoll(e) {
+    e.preventDefault();
+    fetch('/polls', {
+        method: 'POST',
+        body: JSON.stringify({
+            question: newQuestion,
+            option1: newOption1,
+            option2: newOption2
+        }),
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    }).then((response) => {
+        if (response.status === 201) {
+            console.log("Poll created.");
+            newQuestion = "";
+            newOption1 = "";
+            newOption2 = "";
+        }
+    }).catch((error) => {
+        alert(error.message);
+    })
+}
+
 function CreateUserComponent() {
     function handleSubmit() {
         alert("User registered!")
@@ -65,28 +93,6 @@ function CreatePollComponent() {
     const [question, setQuestion] = useState('');
     const [option1, setOption1] = useState('');
     const [option2, setOption2] = useState('');
-
-    function createPoll() {
-        fetch('/polls/', {
-            method: 'POST',
-            body: JSON.stringify({
-                question: newQuestion,
-                option1: newOption1,
-                option2: newOption2
-            }),
-            headers: {
-                'Content-Type': 'application/json'
-            }
-        }).then((response) => {
-            if (response.status === 201) {
-                newQuestion = "";
-                newOption1 = "";
-                newOption2 = "";
-            }
-        }).catch((error) => {
-            alert(error.message);
-        })
-    }
 
     return (
         <>
@@ -116,30 +122,22 @@ function CreatePollComponent() {
                 <button onClick={createPoll}>Submit</button>
             </form>
         </>
-        // TODO: Implement a form that requires a question and VoteOptions.
-        //  The poll should be registered as released at exact time and date
-        //  as it was published, and the expiration date is up for choice.
-        //  Note that each registered poll should have its own unique id.
-
-        // TODO: Implement some sort of way to create N VoteOptions,
-        //  with N being the creator's demand of amount.
     );
 }
 
 function VoteComponent() {
-    const voteOptions = poll.options.map(option =>
-        <>
-            <button key={option.presentationOrder}>
-                {option.caption} | 0 votes
-            </button>
-        </>
+    const polls = poll.options.map(option =>
+        <button key={option.presentationOrder}>
+            {option.caption}
+        </button>
     );
 
     return (
         <>
             <div className={"poll"}>
-                <h2>Poll made by {user.username}</h2>
-                {voteOptions}
+                <h2>Poll by {user.username}</h2>
+                <p>{poll.question}</p>
+                {polls}
             </div>
         </>
    );
