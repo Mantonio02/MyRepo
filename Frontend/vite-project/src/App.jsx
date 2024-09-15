@@ -3,6 +3,39 @@ import { useState } from 'react'
 
 const domainUrl = "http://localhost:5173"
 
+const polls = () => {
+    return fetch(domainUrl + '/polls/')
+        .then(response => response.json())
+        .then(json => {
+            return json;
+        })
+        .catch(error => {
+            console.error(error);
+        })
+}
+
+const voteOptions = () => {
+    return fetch(domainUrl + '/voteOptions/')
+        .then(response => response.json())
+        .then(json => {
+            return json;
+        })
+        .catch(error => {
+            console.error(error);
+        })
+}
+
+const votes = () => {
+    return fetch(domainUrl + '/votes/')
+        .then(response => response.json())
+        .then(json => {
+            return json;
+        })
+        .catch(error => {
+            console.error(error);
+        })
+}
+
 const user = {
     username: "JohnDoe",
     email: "johndoe@email.com",
@@ -77,7 +110,7 @@ function VoteComponent() {
         </>
     );
 
-    //fetch(domainUrl + /users/votes/);
+    fetch(domainUrl + /votes/);
 
     return (
         <>

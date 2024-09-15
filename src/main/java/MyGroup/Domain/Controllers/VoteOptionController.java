@@ -12,7 +12,7 @@ import java.util.Collection;
 
 @RestController
 @CrossOrigin
-@RequestMapping("/users/polls/options")
+@RequestMapping("/voteOptions")
 public class VoteOptionController {
     private final DomainManager domainManager;
 
