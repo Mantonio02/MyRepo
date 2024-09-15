@@ -17,8 +17,7 @@ Technical Issues:
 - Sometime during step 1, the backend's java classes from previous assignment had all its content erased with the exception of the classes mentioned in their respective files. I fixed it by going back to a previous push in the main repository.
 
 Link to React App:
-(Currently a part of a branch)
-https://github.com/Mantonio02/MyRepo/blob/Frontend/Frontend/vite-project/src/App.jsx
+https://github.com/Mantonio02/MyRepo/blob/main/Frontend/vite-project/src/App.jsx
 
 Other Issues:
 - The React Components in step 4 went invisible on the web page after using fetch to get all the polls to output them through VoteComponent. I suspect this occurred due to a failed HTTP request by status code 404, missing code, or a case of there being no available polls (although it would be weird for the manner that all the components vanishes). Thus I opted to keep the solution for the test values that were already available in App.jsx.
