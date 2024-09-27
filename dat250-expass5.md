@@ -86,7 +86,8 @@
 - My implementation is based off the previous MapReduce example and uses the same collection, orders. However, there are some differences which proves why such operations prove useful for extracting and working with data.
 - In the additional implementation, I want to find out how much money is spared in total for each product if given a certain discount. In this example, I used 20% discount for all products. 
 - Input
-<img src="/screenshot/mapReduce3.png">
+<img src="/screenshot/mapReduce3_1.png">
+<img src="/screenshot/mapReduce3_2.png">
 
 - mapFunction3 iterates through the collection to assign key-value pairs, with sku (name of product) being the key, and an array consisting of quantity and price being the values.
 - reduceFunction3 sets the value for quantity and price, then returns the new array reducedVal.
