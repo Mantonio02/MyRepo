@@ -16,7 +16,7 @@
 <img src="/screenshot/insert_one.png">
 
 - Multiple documents
-<img src="/screenshot/insert_mutiple.png">
+<img src="/screenshot/insert_multiple.png">
 
 ### Queries
 - Select all documents
