@@ -75,7 +75,8 @@
 
 ### Order, Total Quantity and Average Quantity per Item
 - Input
-<img src="/screenshot/mapReduce2.png">
+<img src="/screenshot/mapReduce2_1.png">
+<img src="/screenshot/mapReduce2_2.png">
 
 - Output
 <img src="/screenshot/mapReduceProof2_1.png">
