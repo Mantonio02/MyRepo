@@ -11,4 +11,4 @@
 
 ## Pending issues
 - Although I solved the installation, I was still not able to compile the files according to the tutorials. However, I managed to run the files anyway through the mentioned method from the 2nd experiment of this assigment.
-- I made an entirely new project for this assignment through the IDE I used (IntelliJ), and have not merged it properly with this repository. The folder expass6 and all of its content are a part of that project.
+- I made an entirely new project for this assignment through the IDE I used (IntelliJ), and have not merged it properly with this repository. The folder <a href=https://github.com/Mantonio02/MyRepo/tree/main/expass6>expass6</a> and all of its content are a part of that project.
