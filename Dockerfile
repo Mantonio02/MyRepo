@@ -1,3 +1,6 @@
+# Used Dockerfile of Lecture 14 as reference/starting point:
+# https://github.com/selabhvl/dat250public/blob/master/lectureexamples/l14_containers/Dockerfile
+
 FROM gradle:8-jdk21 AS builder
 
 WORKDIR /home/gradle
