@@ -23,3 +23,7 @@
 ### Link to Dockerfiles
 <a href="https://github.com/Mantonio02/MyRepo/blob/main/Dockerfile">My Dockerfile</a>
 <a href="https://github.com/selabhvl/dat250public/blob/master/lectureexamples/l14_containers/Dockerfile">Lecture Dockerfile</a>
+
+## Pending issues
+- Did not implement the mentioned improvements in the second part of the assigment, i.e. the security concerns.
+- Did not implement the multi-stage build in Dockerfile.
