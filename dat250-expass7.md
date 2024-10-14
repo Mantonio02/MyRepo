@@ -13,17 +13,14 @@
 <a href="https://github.com/Mantonio02/dat250-jpa-tutorial/tree/master">JPA Assignment</a>
 
 ## Creating own Docker Image
-- For the base image, I chose the official gradle version gradle:8-jdk21, which was used in the Dockerfile of lecture 14 as well. Thus the FROM-line of the Dockerfile would be FROM gradle:8-jdk21.
+- For the base image, I chose eclipse-temurin:21-alpine, and the builder would be gradle:8-jdk21, with both being used in the Dockerfile of lecture 14 as well.
 - I followed it up with copying my application into gradle by COPY; this included the gradle kts files settings.gradle.kts, build.gradle.kts and gradlew, as well as ./, src- and gradle directory.
 - Thereafter, I used the suggested RUN gradle bootJar as well as renaming the build file to something more suitable; in this case app.jar.
+- To assure root is not being used when running the application, I added two RUN-instructions, first with addgroup and then with adduser. The non-root user would later on gain a copy of the build after directing to the new user in the Dockerfile. The non-root user would be nicknamed 'app' in this file.
 - Lastly, for the Dockerfile, I added CMD and specified what file should run and instances, hence CMD ("java", "-jar", "app.jar").
-- After being done with the Dockerfile, I ran it through my preferred IDE, IntelliJ, to create the container, which would also give an insight whether there was anything wrong or if the build succeeded.
-- I used the Dockerfile of lecture 14 as a starting point for my own file.
+- After being done with the Dockerfile, I ran it through my preferred IDE, IntelliJ, to create the container, which would also give an insight whether there was anything wrong or if the build succeeded though the 'Build Log'.
+- I used the Dockerfile of lecture 14 as a reference/starting point for the Dockerfile.
 
 ### Link to Dockerfiles
 <a href="https://github.com/Mantonio02/MyRepo/blob/main/Dockerfile">My Dockerfile</a>
 <a href="https://github.com/selabhvl/dat250public/blob/master/lectureexamples/l14_containers/Dockerfile">Lecture Dockerfile</a>
-
-## Pending issues
-- Did not implement the mentioned improvements in the second part of the assigment, i.e. the security concerns.
-- Did not implement the multi-stage build in Dockerfile.
