@@ -5,8 +5,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5435a189-00b9-4754-8dd1-443b50d8e5db" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/vite-project/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/vite-project/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/MyGroup/Domain/Controllers/PollController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/MyGroup/Domain/Controllers/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/MyGroup/Domain/Controllers/VoteController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/MyGroup/Domain/Controllers/VoteOptionController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/MyGroup/Domain/Managers/DomainManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/MyGroup/Domain/Managers/PollManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/MyGroup/Domain/Models/Poll.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/MyGroup/Domain/Models/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/MyGroup/Domain/Models/Vote.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/MyGroup/Domain/Models/VoteOption.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/MyGroup/Domain/MyProjectApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyGroup/Domain/Controllers/PollController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repo/domain/controllers/PollController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyGroup/Domain/Controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repo/domain/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyGroup/Domain/Controllers/VoteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repo/domain/controllers/VoteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyGroup/Domain/Controllers/VoteOptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repo/domain/controllers/VoteOptionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyGroup/Domain/Managers/DomainManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repo/domain/managers/DomainManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyGroup/Domain/Managers/PollManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repo/domain/managers/PollManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyGroup/Domain/Models/Poll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repo/domain/models/Poll.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyGroup/Domain/Models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repo/domain/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyGroup/Domain/Models/Vote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repo/domain/models/Vote.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyGroup/Domain/Models/VoteOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repo/domain/models/VoteOption.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyGroup/Domain/MyProjectApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repo/domain/MyProjectApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MyGroup/Domain/MyProjectApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/repo/domain/MyProjectApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,12 +65,16 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -54,6 +89,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Docker.Dockerfile.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.Build MyRepo.executor&quot;: &quot;Run&quot;,
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
     &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
@@ -74,14 +110,23 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Docker.Dockerfile">
     <configuration name="MyProjectApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="MyProject.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="MyGroup.Domain.MyProjectApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="MyGroup.domain.MyProjectApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="com.soywiz.korge.intellij.UpdateResourceBeforeRunTask" enabled="false" />
       </method>
+    </configuration>
+    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="containerName" value="" />
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
     </configuration>
   </component>
   <component name="SharedIndexes">
@@ -109,7 +154,12 @@
       <workItem from="1726237222657" duration="2948000" />
       <workItem from="1726304815016" duration="14387000" />
       <workItem from="1726402479102" duration="16680000" />
-      <workItem from="1726438636701" duration="653000" />
+      <workItem from="1726438636701" duration="1343000" />
+      <workItem from="1726651958792" duration="24000" />
+      <workItem from="1728668977098" duration="4000" />
+      <workItem from="1728754402309" duration="3233000" />
+      <workItem from="1728815136456" duration="3660000" />
+      <workItem from="1728879952665" duration="2055000" />
     </task>
     <servers />
   </component>
