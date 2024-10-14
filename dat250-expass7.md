@@ -13,3 +13,13 @@
 <a href="https://github.com/Mantonio02/dat250-jpa-tutorial/tree/master">JPA Assignment</a>
 
 ## Creating own Docker Image
+- For the base image, I chose the official gradle version gradle:8-jdk21, which was used in the Dockerfile of lecture 14 as well. Thus the FROM-line of the Dockerfile would be FROM gradle:8-jdk21.
+- I followed it up with copying my application into gradle by COPY; this included the gradle kts files settings.gradle.kts, build.gradle.kts and gradlew, as well as ./, src- and gradle directory.
+- Thereafter, I used the suggested RUN gradle bootJar as well as renaming the build file to something more suitable; in this case app.jar.
+- Lastly, for the Dockerfile, I added CMD and specified what file should run and instances, hence CMD ("java", "-jar", "app.jar").
+- After being done with the Dockerfile, I ran it through my preferred IDE, IntelliJ, to create the container, which would also give an insight whether there was anything wrong or if the build succeeded.
+- I used the Dockerfile of lecture 14 as a starting point for my own file.
+
+### Link to Dockerfiles
+<a href="https://github.com/Mantonio02/MyRepo/blob/main/Dockerfile">My Dockerfile</a>
+<a href="https://github.com/selabhvl/dat250public/blob/master/lectureexamples/l14_containers/Dockerfile">Lecture Dockerfile</a>
